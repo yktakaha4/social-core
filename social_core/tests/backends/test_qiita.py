@@ -78,6 +78,7 @@ class QiitaOAuth2TestIdentifiedByPermanentId(QiitaOAuth2Test):
         self.assertEqual(social.uid, '12345')
         self.assertEqual(social.extra_data['permanent_id'], 12345)
 
+
 class QiitaOAuth2TestIdentifiedByPermanentIdAuthException(QiitaOAuth2Test):
     user_data_body = json.dumps({
         'id': 'foobar',
